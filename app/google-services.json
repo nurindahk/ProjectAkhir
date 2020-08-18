@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "811889553143",
+    "firebase_url": "https://tugasakhirmic.firebaseio.com",
+    "project_id": "tugasakhirmic",
+    "storage_bucket": "tugasakhirmic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811889553143:android:2c933b789c4cffe2472df2",
+        "android_client_info": {
+          "package_name": "com.indah.myinstacherry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811889553143-oifftns069svmi42s5qj64l5mtgc4s8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indah.myinstacherry",
+            "certificate_hash": "45bf3e61e52143406a5a48b8a924b7e31fa14df1"
+          }
+        },
+        {
+          "client_id": "811889553143-rqq4gv2bip5jc55q40nito0sm0716g35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX5zgMpE0JsY9syZHXsKPbtoQ_QTsMS_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811889553143-rqq4gv2bip5jc55q40nito0sm0716g35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
