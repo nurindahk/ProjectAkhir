@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.indah.myinstacherry.StartActivity.Main2Activity;
 
 public class HomeActivity extends AppCompatActivity {
     Button btnLogout;
@@ -25,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent InToMain = new Intent(HomeActivity.this, MainActivity.class);
+                Intent InToMain = new Intent(HomeActivity.this, Main2Activity.class);
                 startActivity(InToMain);
             }
         });

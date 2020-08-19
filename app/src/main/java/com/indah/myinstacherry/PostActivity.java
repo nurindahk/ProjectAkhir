@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
+import com.indah.myinstacherry.StartActivity.Main2Activity;
 import com.theartofdev.edmodo.cropper.CropImage;
 
 import java.util.HashMap;
@@ -55,7 +56,7 @@ public class PostActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PostActivity.this, MainActivity.class));
+                startActivity(new Intent(PostActivity.this, Main2Activity.class));
                 finish();
             }
         });
@@ -118,7 +119,7 @@ public class PostActivity extends AppCompatActivity {
 
                         progressDialog.dismiss();
 
-                        startActivity(new Intent(PostActivity.this, MainActivity.class));
+                        startActivity(new Intent(PostActivity.this, Main2Activity.class));
                         finish();
                     }
                     else {
@@ -149,7 +150,7 @@ public class PostActivity extends AppCompatActivity {
         }
         else {
             Toast.makeText(this, "Something gone wrong!", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(PostActivity.this, MainActivity.class));
+            startActivity(new Intent(PostActivity.this, Main2Activity.class));
             finish();
         }
     }

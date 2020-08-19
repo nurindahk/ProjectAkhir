@@ -29,6 +29,22 @@ public class Main2Activity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_nav_bar);
         getFragmentPage(new HomeFragment());
         bottomNavbar();
+
+        Bundle intent = getIntent().getExtras();
+        if (intent != null){
+            String publisher = intent.getString("publisherid");
+
+            SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
+            editor.putString("profielid", publisher);
+            editor.apply();
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.rv_container,
+                    new ProfileFragment()).commit();
+        }
+        else{
+            getSupportFragmentManager().beginTransaction().replace(R.id.rv_container,
+                    new HomeFragment()).commit();
+        }
     }
 
     private void bottomNavbar() {
