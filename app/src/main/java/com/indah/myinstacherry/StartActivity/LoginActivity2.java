@@ -46,6 +46,13 @@ public class LoginActivity2 extends AppCompatActivity {
         txt_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(LoginActivity2.this, RegisterActivity.class));
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 final ProgressDialog pd = new ProgressDialog(LoginActivity2.this);
                 pd.setMessage("Please Wait..");
                 pd.show();

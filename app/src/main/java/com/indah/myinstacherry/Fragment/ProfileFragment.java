@@ -1,6 +1,7 @@
 package com.indah.myinstacherry.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.indah.myinstacherry.Adapter.MyFotoAdapter;
+import com.indah.myinstacherry.EditProfileActivity;
 import com.indah.myinstacherry.Model.Post;
 import com.indah.myinstacherry.Model.user;
 import com.indah.myinstacherry.R;
@@ -118,7 +120,7 @@ public class ProfileFragment extends Fragment {
                 String btn = edit_profile.getText().toString();
 
                 if (btn.equals("Edit Profile")){
-                    //go to editprofile
+                    startActivity(new Intent(getContext(), EditProfileActivity.class));
                 }
                 else if (btn.equals("follow")){
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
